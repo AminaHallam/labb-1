@@ -5,7 +5,7 @@ get_header();
 
 
         <main>
-            // Loppen tittar om det finns en post och isåfall hämtar ut den på sidan 
+            <!-- Loppen tittar om det finns en post och isåfall hämtar ut den på sidan --> 
             <?php while(have_posts()) {
                 the_post(); ?>
 			    <section>
@@ -14,14 +14,12 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="hero">
-                                    // hämtar bilden
+                                    <!-- hämtar bilden -->
                                     <?php the_post_thumbnail(); ?> 
                                     
                                     <div class="text">
-                                        //hämtar titeln 
-                                        <h1><?php the_title(); ?></h1>
 
-                                        // hämtar innehållet
+                                        <!-- hämtar innehållet -->
                                         <p><?php the_content(); ?></p>
                                     </div>
                                 </div>
@@ -33,4 +31,4 @@ get_header();
             <?php } ?> 
 
 		</main>
-
+        <?php get_footer(); ?>
