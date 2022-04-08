@@ -31,7 +31,8 @@
 									</li>
 									<li>
 										<i class="fa fa-user"></i> 
-                                        <a href=""><?php the_author(); ?></a>
+										<?php the_author_posts_link(); ?> 
+										</a>
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> 
@@ -45,17 +46,34 @@
 
                             <?php } ?>
 
-                        </div>
+                        
 							<nav class="navigation pagination">
-								<h2 class="screen-reader-text">Inläggsnavigering</h2>
-								<a class="prev page-numbers" href="">Föregående</a>
-								<span class="page-numbers current">1</span>
-								<a class="page-numbers" href="">2</a>
-								<a class="next page-numbers" href="">Nästa</a>
+							<?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
 							</nav>
+
 						</div>
 
-        </section>   
-    </main>                
+						
+
+						<aside id="secondary" class="col-xs-12 col-md-3">
+							<div id="sidebar">
+
+								<ul role="navigation">
+									<li class="pagenav">
+
+										<?php 
+										dynamic_sidebar('widget1');
+										?>
+									</li>
+								</ul>
+
+							</div>
+						</aside>
+
+					</div>
+
+		</div>
+    </section>   
+</main>                
 
 <?php get_footer(); ?> 

@@ -30,7 +30,8 @@
                                         <?php echo get_the_date('l F j, Y' ); ?> 
 									</li>
 									<li>
-										<i class="fa fa-user"></i> <a href="forfattare.html">Peter Pärmenäs</a>
+										<i class="fa fa-user"></i> 
+                                        <?php the_author_posts_link(); ?>
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> 
@@ -43,8 +44,30 @@
 							</article>
 
                             <?php } ?>
+                            
+                        </div>
 
-        </section>   
-    </main>                
+                            <aside id="secondary" class="col-xs-12 col-md-3">
+                                <div id="sidebar">
+
+                                    <ul role="navigation">
+                                        <li class="pagenav">
+
+                                            <?php 
+                                            dynamic_sidebar('widget1');
+                                            ?>
+                                        </li>
+                                    </ul>
+
+                                </div>
+						    </aside>
+
+
+                    </div>
+
+            </div>   
+
+    </section>   
+</main>                
 
 <?php get_footer(); ?> 
