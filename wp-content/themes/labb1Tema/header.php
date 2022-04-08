@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Labb 1</title>
+	<title><?php wp_title(' '); ?></title>
 	
     <?php wp_head(); ?>
 </head>
@@ -15,8 +15,8 @@
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
                         <!-- Hämtar sidans info från url och name ses som text OBS! Kolla upp det!!! -->
-						<a class="logo" href="<?php get_bloginfo("url"); ?>
-                        <?php get_bloginfo("name"); ?> "></a>
+						<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+
                         
 					</div>
 					<div class="col-sm-6 hidden-xs">
