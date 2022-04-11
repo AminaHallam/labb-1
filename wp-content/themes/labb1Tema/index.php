@@ -1,6 +1,5 @@
-<?php 
-get_header(); 
-?> 
+<!-- Hämtar och skriver ut header här -->
+<?php get_header(); ?> 
 
 
 
@@ -14,7 +13,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="hero">
-                                    <!-- hämtar bilden -->
+                                    <!-- hämtar och printar ut bilden -->
                                     <?php the_post_thumbnail(); ?> 
                                     
                                     <div class="text">
@@ -31,4 +30,5 @@ get_header();
             <?php } ?> 
 
 		</main>
+        <!-- Hämtar och skriver ut footer här -->
         <?php get_footer(); ?>
