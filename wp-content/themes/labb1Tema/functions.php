@@ -1,5 +1,7 @@
 <?php 
 
+
+/* inkluderar enqueue filen här  */
 include('enqueue.php'); 
 
 // tillägg för extra temasupport

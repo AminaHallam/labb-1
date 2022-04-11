@@ -2,8 +2,10 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
+   <!--  Hämtar titeln för varje sida -syns i flicken längst upp-  -->
 	<title><?php wp_title(' '); ?></title>
 	
+    <!-- printar ut script och eller data  -->
     <?php wp_head(); ?>
 </head>
 <body>
@@ -14,8 +16,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
-                        <!-- Hämtar sidans info från url och name ses som text OBS! Kolla upp det!!! -->
-						<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+                        <!-- Hämtar sidans info från url och echo name som text på sidan -->
+						<a class="logo" href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a>
 
                         
 					</div>
@@ -37,13 +39,8 @@
 		</header>
 
 		<div class="mobile-search">
-			<form id="searchform" class="searchform">
-				<div>
-					<label class="screen-reader-text">Sök efter:</label>
-					<input type="text" />
-					<input type="submit" value="Sök" />
-				</div>
-			</form>
+         <!-- Form input för sökfunktion -->
+			<?php get_search_form(); ?> 
 		</div>
 
 		<nav id="nav">
@@ -51,6 +48,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 
+                        <!-- Hämtar och skriver ut lämplig menu  -->
                         <?php wp_nav_menu(array(
                             'theme_location' => 
                             'huvudmeny'
