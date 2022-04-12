@@ -83,7 +83,8 @@
 					</div>
 
 		</div>
-    </section>   
+    </section>  
+	 
 </main>                
 
  <!-- Hämtar och skriver ut footer här -->

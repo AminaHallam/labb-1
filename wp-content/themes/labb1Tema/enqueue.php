@@ -20,7 +20,6 @@ function my_scripts_css() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('script');
 
-
 }
 
 

@@ -1,6 +1,5 @@
 <?php 
 
-
 /* inkluderar enqueue filen här  */
 include('enqueue.php'); 
 
