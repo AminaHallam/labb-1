@@ -83,6 +83,7 @@
 
 
         </section>   
+		
     </main>                
 	<!-- Hämtar och skriver ut footer här -->
 <?php get_footer(); ?> 

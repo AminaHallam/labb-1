@@ -7,6 +7,7 @@
 	
     <!-- printar ut script och eller data  -->
     <?php wp_head(); ?>
+	
 </head>
 <body>
 

@@ -26,6 +26,7 @@
 					</div>
 				</div>
 			</section>
+			
 		</main>
 
 		 <!-- Hämtar och skriver ut footer här -->

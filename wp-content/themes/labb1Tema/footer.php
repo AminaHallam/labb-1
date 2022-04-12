@@ -43,6 +43,7 @@
 					</div>
 				</div>
 			</div>
+			
     </footer>
 
 	<!-- printar ut script och eller data  -->

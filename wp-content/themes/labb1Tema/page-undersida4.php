@@ -22,7 +22,8 @@
                         </div>
 				</div>
 			</section>
-		</main>
+
+</main>
 
          <!-- Hämtar och skriver ut footer här -->
 <?php get_footer(); ?> 
