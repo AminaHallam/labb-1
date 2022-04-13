@@ -49,5 +49,13 @@ register_sidebar(
     ]
     );
 
+    register_sidebar(
+        [
+            'name' => 'widget 4',
+            'id' => 'widget4',
+            'description' => 'widget till copyright.'
+        ]
+        );
+
 
 ?> 

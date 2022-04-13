@@ -32,20 +32,24 @@
 						</li>
 					</ul>
 
-                        </div>
+                    </div>
                             
                         
 					
 				</div>
 				<div class="row bottom">
 					<div class="col-xs-12">
-						<p>Copyright &copy; Grupp X, 2016</p>
+						<?php 
+								/* Hämtar lämplig widget  */
+								dynamic_sidebar('widget4');
+							?>
 					</div>
 				</div>
 			</div>
 			
     </footer>
 
+</div>
 	<!-- printar ut script och eller data  -->
     <?php wp_footer(); ?>
     
